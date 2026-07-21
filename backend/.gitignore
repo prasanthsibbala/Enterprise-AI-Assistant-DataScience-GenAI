@@ -1,0 +1,28 @@
+venv/
+.env
+uploads/
+__pycache__/
+*.pyc
+.DS_Store
+chroma_db/
+# Python
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Node
+node_modules/
+dist/
+
+# Database
+*.db
+
+# Chroma
+chroma_db/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/

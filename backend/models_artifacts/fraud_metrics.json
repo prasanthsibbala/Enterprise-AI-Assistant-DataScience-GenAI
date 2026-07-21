@@ -1,0 +1,52 @@
+{
+  "model_name": "Random Forest Healthcare Fraud Classifier",
+  "model_version": "1.0.0",
+  "accuracy": 0.9205,
+  "precision": 0.3725,
+  "recall": 0.1301,
+  "f1_score": 0.1929,
+  "roc_auc": 0.7296,
+  "confusion_matrix": [
+    [
+      1822,
+      32
+    ],
+    [
+      127,
+      19
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.9348383786557208,
+      "recall": 0.982740021574973,
+      "f1-score": 0.9581909019195372,
+      "support": 1854.0
+    },
+    "1": {
+      "precision": 0.37254901960784315,
+      "recall": 0.13013698630136986,
+      "f1-score": 0.19289340101522842,
+      "support": 146.0
+    },
+    "accuracy": 0.9205,
+    "macro avg": {
+      "precision": 0.653693699131782,
+      "recall": 0.5564385039381714,
+      "f1-score": 0.5755421514673827,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.8937912554452259,
+      "recall": 0.9205,
+      "f1-score": 0.9023241843535226,
+      "support": 2000.0
+    }
+  },
+  "training_rows": 8000,
+  "testing_rows": 2000,
+  "fraud_records": 731,
+  "non_fraud_records": 9269,
+  "fraud_rate": 0.0731,
+  "feature_count": 31
+}
