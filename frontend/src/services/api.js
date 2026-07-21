@@ -6,9 +6,11 @@ const ACCESS_TOKEN_KEY =
 const USER_KEY =
   "enterprise_ai_user";
 
+const API_ROOT =
+  import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+
 const api = axios.create({
-  baseURL:
-    "http://127.0.0.1:8000/api/v1",
+  baseURL: `${API_ROOT}/api/v1`,
   timeout: 120000,
 });
 
