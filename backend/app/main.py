@@ -43,16 +43,12 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "https://enterprise-ai-assistant-data-scienc.vercel.app",
-    ],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-app.include_router(
+app.include_router(  
     auth_router,
     prefix=settings.api_v1_prefix,
 )
