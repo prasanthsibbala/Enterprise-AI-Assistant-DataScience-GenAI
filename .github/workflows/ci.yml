@@ -24,10 +24,12 @@ jobs:
           python-version: "3.13"
 
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Verify backend imports
+        env:
+          GEMINI_API_KEY: test-gemini-key
+          JWT_SECRET_KEY: test-jwt-secret-key-for-ci
         run: |
           python -c "import app.main"
 
